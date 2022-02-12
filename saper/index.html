@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saper</title>
+</head>
+
+<body>
+
+  <div id="options">
+    <labal>Wysokość: </labal>
+    <input id="height_val" type="number" min="2" max="199"><br/>
+    
+    <label>Szerokość: </label>
+    <input id="width_val" type="number" min="2" max="199"><br/>
+    
+    <label>Liczba bomb: </label>
+    <input id="bombs_val" type="number"><br/>
+
+    <button onclick="main_game()">Nowa gra</button>
+
+    <label> Bomby: <label id="bombs_num"></label></label>
+    <label> Czas: <label id="time"></label></label>
+
+
+
+  </div>
+
+  <div id="saper"></div>
+
+</body>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script src="saper.js"></script>
+
+</html>

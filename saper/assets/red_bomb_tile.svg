@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:grid x="0" y="0" width="25" height="25"/>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="-53.727" cy="53.234" r="25" id="gradient-2" spreadMethod="pad" gradientTransform="matrix(0.806652, -0.627619, 0.614077, 0.789246, 56.818654, -21.034163)">
+      <stop offset="0" style="stop-color: rgb(52, 45, 66);"/>
+      <stop offset="1" style="stop-color: rgb(28, 28, 36);"/>
+    </radialGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="31.849" y1="12.464" x2="31.849" y2="102.464" id="gradient-0" gradientTransform="matrix(0.898141, 0.439708, -0.55547, 1.111154, 35.138031, -20.395493)">
+      <stop offset="0" style="stop-color: rgb(222, 54, 12);"/>
+      <stop offset="1" style="stop-color: rgb(213, 7, 7);"/>
+    </linearGradient>
+  </defs>
+  <rect style="fill-rule: nonzero; fill-opacity: 0.5; paint-order: fill; stroke-opacity: 0; stroke-width: 0px; stroke: rgb(218, 85, 85); fill: url(#gradient-0);" transform="matrix(1, 0.000077, -0.000077, 1, 18.18104, -7.462568)" x="-13.151" y="12.464" width="90" height="90" rx="25" ry="25">
+    <title>Tile</title>
+  </rect>
+  <line style="fill: rgb(160, 160, 160); stroke-linecap: round; stroke-width: 6px; stroke: rgb(89, 85, 102);" x1="78.956" y1="51.536" x2="75" y2="51.536" transform="matrix(-1, 0, 0, -1, 153.956001, 103.071999)"/>
+  <line style="fill: rgb(160, 160, 160); stroke-linecap: round; stroke-width: 6px; stroke: rgb(89, 85, 102);" x1="25" y1="51.536" x2="21.044" y2="51.536" transform="matrix(-1, 0, 0, -1, 46.044001, 103.071999)"/>
+  <line style="fill: rgb(160, 160, 160); stroke-linecap: round; stroke-width: 6px; stroke: rgb(89, 85, 102);" x1="37.979" y1="71.934" x2="33.979" y2="71.934" transform="matrix(0.71934, -0.694658, 0.694658, 0.71934, -39.871673, 45.182103)"/>
+  <line style="fill: rgb(160, 160, 160); stroke-linecap: round; stroke-width: 6px; stroke: rgb(89, 85, 102);" x1="69.083" y1="71.008" x2="65.083" y2="71.008" transform="matrix(0.719339, 0.694659, -0.694659, 0.719339, 68.153946, -26.670646)"/>
+  <line style="fill: rgb(160, 160, 160); stroke-linecap: round; stroke-width: 6px; stroke: rgb(89, 85, 102);" x1="38.13" y1="27.925" x2="34.13" y2="27.925" transform="matrix(0.71934, 0.694658, -0.694658, 0.71934, 29.538576, -17.26057)"/>
+  <line style="fill: rgb(160, 160, 160); stroke-linecap: round; stroke-width: 6px; stroke: rgb(89, 85, 102);" x1="67.258" y1="27.925" x2="63.258" y2="27.925" transform="matrix(0.719339, -0.694659, 0.694659, 0.719339, -1.082981, 53.16953)"/>
+  <ellipse style="stroke: rgb(0, 0, 0); stroke-opacity: 0; fill: url(#gradient-2);" cx="50" cy="50" rx="25" ry="25"/>
+</svg>
