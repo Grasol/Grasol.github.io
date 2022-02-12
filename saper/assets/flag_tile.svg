@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:grid x="0" y="0" width="25" height="25"/>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="31.849" y1="12.464" x2="31.849" y2="102.464" id="gradient-2" gradientTransform="matrix(0.898887, 0.438176, -0.833205, 1.666731, 63.597729, -77.269478)">
+      <stop offset="0" style="stop-color: rgb(148, 148, 148);"/>
+      <stop offset="1" style="stop-color: rgb(27, 27, 27);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="31.849" y1="12.464" x2="31.849" y2="102.464" id="gradient-3" gradientTransform="matrix(1, 0, 0, 1, 0, 0)">
+      <stop offset="0" style="stop-color: rgba(0, 0, 0, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <bx:grid x="0" y="0" width="25" height="25"/>
+    <bx:grid x="0" y="0" width="25" height="25"/>
+  </defs>
+  <rect style="fill-rule: nonzero; stroke-width: 0px; stroke-opacity: 0; paint-order: fill markers; fill: url(#gradient-2); stroke: url(#gradient-3);" transform="matrix(1, 0.000077, -0.000077, 1, 18.155424, -7.466452)" x="-13.151" y="12.464" width="90" height="90" rx="25" ry="25">
+    <title>Tile</title>
+  </rect>
+  <polygon style="stroke-linecap: round; stroke-linejoin: round; fill: rgb(236, 62, 46); stroke: rgb(236, 62, 46);" points="54.07 49.997 53.819 49.956 28.07 37.889 53.819 23.997"/>
+  <line style="fill: rgb(185, 185, 185); stroke-width: 3px; stroke-linecap: round; stroke: rgb(238, 238, 238);" x1="28.988" y1="75.838" x2="78.96" y2="74.156" transform="matrix(0.999434, 0.033639, -0.033639, 0.999434, 2.55337, -1.773187)"/>
+  <line style="fill: rgb(185, 185, 185); stroke-width: 4px; stroke-linecap: round; stroke: rgb(238, 238, 238);" x1="53.892" y1="72.413" x2="53.974" y2="24.997"/>
+  <path style="fill: rgb(185, 185, 185); stroke-width: 3px; stroke: rgb(238, 238, 238);" d="M 28.974 74.997 C 41.399 71.641 44.861 72.286 53.974 71.994"/>
+  <path style="fill: rgb(185, 185, 185); stroke-width: 3px; stroke: rgb(238, 238, 238);" d="M 53.974 71.994 C 66.399 75.35 69.861 74.705 78.974 74.997" transform="matrix(-1, 0, 0, -1, 132.947998, 146.991005)"/>
+  <line style="stroke-width: 4px; fill: rgb(191, 191, 191); stroke: rgb(238, 238, 238);" x1="50.474" y1="71.046" x2="53.974" y2="24.997"/>
+  <line style="fill: rgb(185, 185, 185); stroke-width: 4px; stroke: rgb(238, 238, 238);" x1="53.974" y1="24.997" x2="57.474" y2="71.997" transform="matrix(-1, 0, 0, -1, 111.447998, 96.993999)"/>
+</svg>
