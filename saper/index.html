@@ -4,35 +4,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="saper.css" rel="stylesheet">
   <title>Saper</title>
 </head>
 
 <body>
 
   <div id="options">
+    <button onclick="setValues(9, 9, 10)"  > Łatwy </button>
+    <button onclick="setValues(16, 16, 40)"> Średni </button>
+    <button onclick="setValues(28, 9, 50)" > Wieża </button>
+    <button onclick="setValues(16, 31, 99)"> Trudny </button>
+    <br/><br/>
+
     <labal>Wysokość: </labal>
-    <input id="height_val" type="number" min="2" max="199"><br/>
+    <input id="height_val" type="number" min="2" max="199">
     
+    <br/>
+
     <label>Szerokość: </label>
-    <input id="width_val" type="number" min="2" max="199"><br/>
+    <input id="width_val" type="number" min="2" max="199">
+
+    <br/>
     
     <label>Liczba bomb: </label>
-    <input id="bombs_val" type="number"><br/>
+    <input id="bombs_val" type="number" min="1" max="39600">
 
-    <button onclick="main_game()">Nowa gra</button>
+    <br/><br/>
 
-    <label> Bomby: <label id="bombs_num"></label></label>
-    <label> Czas: <label id="time"></label></label>
+    <button onclick="main_game()"> Nowa gra </button>
 
-
+    <label> Bomby: <label id="bombs_counter"></label></label>
+    <label> Czas: <label id="time_counter"></label></label>
 
   </div>
 
   <div id="saper"></div>
 
 </body>
-
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 <script src="saper.js"></script>
 

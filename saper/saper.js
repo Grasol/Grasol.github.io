@@ -1,6 +1,8 @@
 var height = document.getElementById("height_val");
 var width = document.getElementById("width_val");
 var bombs = document.getElementById("bombs_val");
+var bombs_counter = document.getElementById("bombs_counter");
+var time_counter = document.getElementById("time_counter");
 
 const HIDDEN_TILE = "hidden_tile.svg";
 const EMPTY_TILE = "empty_tile.svg";
@@ -55,9 +57,6 @@ var Board = class {
 
       this.board[i] = array_tile;
     }
-
-    console.log(this.board);
-
   }
 
   setTile(idx, bottom=this.EMPTY, top=this.EMPTY) {
@@ -142,7 +141,6 @@ var Logic = class {
         }
 
         else if (tiles.includes(r) && empty_try > 0) {
-          console.log(empty_try, "ZEROZERO");
           empty_try -= 1;
           continue;
         }
@@ -283,7 +281,6 @@ var Logic = class {
           }
 
           let t = this.board.getTop(tiles[i]);
-          console.log(tiles[i], t);
           if (t == this.board.FLAG) {
             flags++;
           }
@@ -294,7 +291,6 @@ var Logic = class {
         }
 
         if (tile_bottom == flags) {
-          console.log("VIS: ", vis)
           res = this.visTiles(vis);
         }
       }
@@ -317,12 +313,10 @@ var Logic = class {
   // 0: ok
   // 1: win
   // 2: boom
- 
-  console.log(">>>>>", res);
+
   if (res != null) {
     for (let i = 0; i < res.length; i++) {
       if (this.board.getBottom(res[i]) == this.board.BOMB) {
-        console.log("AA")
         status = 2;
         break;
       } 
@@ -333,7 +327,6 @@ var Logic = class {
     cont: {
     for (let i = 0; i < this.board.board.length; i++) {
       let t = this.board.getTop(i);
-      console.log("<<<", t);
       if (t == this.board.EMPTY || t == this.board.QM) {
         break cont;
       }
@@ -347,7 +340,6 @@ var Logic = class {
     }
   }
 
-  console.log("---->", status);
   return status;
   }
 }
@@ -465,23 +457,25 @@ function getTileLink(board, num_tile, bomb_variant=0, flag_variant=0) {
   return res;
 }
 
-function counter() {
+function timeCounter() {
   time++;
-  document.getElementById("time").innerHTML = time;
+  time_counter.innerHTML = time;
 }
-
 
 
 function main_game() {
   first_click = true;
-  time = 0;
 
   var logic = new Logic(null)
-  console.log(logic.height, "AAAAAAA");
   var board = new Board(logic.max_tiles);
   logic.board = board;
 
   genBoard(logic);
+
+  bombs_counter.innerHTML = logic.bombs;
+  window.clearInterval(intv);
+  time = 0;
+  time_counter.innerHTML = time;
 
   let print_tiles = new Array(board.max_tiles);
   for (let i = 0; i < board.max_tiles; i++) {
@@ -490,12 +484,14 @@ function main_game() {
 
   print_tiles.forEach(function(p_tile) {
     p_tile.addEventListener("mousedown", function(e) {
+      e.preventDefault();
+
       if (first_click) {
         if (intv != undefined) {
           window.clearInterval(intv);
         }
 
-        intv = window.setInterval(counter, 1000);
+        intv = window.setInterval(timeCounter, 1000);
       }
 
       let status = logic.tileService(e);
@@ -508,7 +504,7 @@ function main_game() {
         }
       }
 
-      document.getElementById("bombs_num").innerHTML = logic.bombs - flags;
+      bombs_counter.innerHTML = logic.bombs - flags;
       if (status != 0) {
         window.clearInterval(intv);
         let saper = document.getElementById("saper")
@@ -522,4 +518,9 @@ function main_game() {
 
 }
 
+function setValues(h, w, b) {
+  height.value = h;
+  width.value = w;
+  bombs.value = b;
+}
 

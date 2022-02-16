@@ -4,8 +4,8 @@
     <bx:grid x="0" y="0" width="25" height="25"/>
     <style bx:fonts="Girassol">@import url(https://fonts.googleapis.com/css2?family=Girassol%3Aital%2Cwght%400%2C400&amp;display=swap);</style>
     <linearGradient gradientUnits="userSpaceOnUse" x1="31.849" y1="12.464" x2="31.849" y2="102.464" id="gradient-0" gradientTransform="matrix(0.894145, 0.447778, -0.55547, 1.111154, 35.265293, -20.652521)">
-      <stop offset="0" style="stop-color: rgb(194, 194, 194);"/>
-      <stop offset="1" style="stop-color: rgb(36, 36, 36);"/>
+      <stop offset="0" style="stop-color: rgb(245, 245, 245);"/>
+      <stop offset="1" style="stop-color: rgb(180, 180, 180);"/>
     </linearGradient>
     <linearGradient gradientUnits="userSpaceOnUse" x1="31.849" y1="12.464" x2="31.849" y2="102.464" id="gradient-1" gradientTransform="matrix(0.890916, 0.454168, -0.55547, 1.111154, 35.36813, -20.856031)" spreadMethod="pad">
       <stop offset="0" style="stop-color: rgba(0, 0, 0, 1)"/>
@@ -21,7 +21,7 @@
       </feMerge>
     </filter>
   </defs>
-  <rect style="fill-rule: nonzero; stroke-opacity: 0; stroke-width: 0px; fill-opacity: 0.5; fill: url(#gradient-0); stroke: url(#gradient-1); paint-order: fill;" transform="matrix(1, 0.000077, -0.000077, 1, 18.155424, -7.466452)" x="-13.151" y="12.464" width="90" height="90" rx="25" ry="25">
+  <rect style="fill-rule: nonzero; stroke-opacity: 1; stroke-width: 0px; fill-opacity: 1; fill: url(#gradient-0); stroke: url(#gradient-1); paint-order: fill;" transform="matrix(1, 0.000077, -0.000077, 1, 18.18104, -7.462568)" x="-13.151" y="12.464" width="90" height="90" rx="25" ry="25">
     <title>Tile</title>
   </rect>
   <text style="fill: rgb(210, 73, 68); font-family: Girassol; font-size: 70px; white-space: pre; filter: url(#outline-filter-0);" transform="matrix(1.322698, 0, 0, 1.023234, -15.94941, -0.042742)" x="30.959" y="74.994">3</text>

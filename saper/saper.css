@@ -1,0 +1,25 @@
+
+body {
+  background: black;
+  color: white;
+
+  text-align: center;
+}
+
+#saper {
+  height: auto;
+  max-height: 90vh;
+  width: auto;
+  max-width: 180vh;
+
+  position: relative;
+  display: inline-block;
+
+  border-width: 1px;
+  border-color: white;
+  border-style: solid;
+
+  overflow-y: auto;
+  overflow-x: visible;
+  white-space:nowrap;
+}
