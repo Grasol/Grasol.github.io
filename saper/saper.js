@@ -346,15 +346,20 @@ var Logic = class {
 
 
 function getValueInRange(val, min, max) {
-  if (val < min) {
-    return min;
+  let res;
+  if (min <= val && val <= max) {
+    res = val;
   }
 
-  if (val > max) {
-    return max;
+  else if (val > max) {
+    res = max;
   }
 
-  return val;
+  else {
+    res = min;
+  }
+
+  return res;
 }
 
 function getRandomInt(min, max) {
