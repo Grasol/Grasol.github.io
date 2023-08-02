@@ -70,7 +70,7 @@ nav {
   padding: 5px;
 }
 
-section.container {
+.post-container {
   float: right;
   width: 60%;
   margin: 15px;
@@ -78,36 +78,48 @@ section.container {
 
 }
 
+.filter {
+  margin: 15px;
+}
+
 article {
   width: 100%;  
   margin: 15px;
 }
 
-article .article {
+article .post {
   display: block;
   padding: 10px;
   transition: 0.5s;
 }
 
-.article .article-header h2 {
+.post .post-header h2, 
+.post .cont-read {
   transition: 0.5s;
 }
 
-.article:hover .article-header h2 {
+.post:hover .post-header h2,
+.post:hover .cont-read {
   color: #8ed200;
 }
 
-.article-header {
+.post-header {
   display: inline-block;
   width: 100%;
 }
 
-.article-header h2 {
+.post-header h2 {
   float: left;
   margin-top: 10px;
 }
 
-.article-header label#date {
+.post .cont-read {
+  padding: 1px;
+  margin-bottom: 0;
+}
+
+.post-header #post-info,
+.post .cont-read {
   float: right;
   color: #999999;
   font-size: 15px;
@@ -119,7 +131,7 @@ article .article {
   position: relative;
   z-index: 1;
   background: linear-gradient(0deg, rgba(25,40,116,0.75) 0%, rgba(52,21,129,0.75) 85%);
-  border-radius: 15px;
+  /*border-radius: 15px;*/
 }
 
 .tile-background::before {
@@ -129,7 +141,7 @@ article .article {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  /*border-radius: 15px;*/
   opacity: 0;
   transition: opacity 0.5s;
   z-index: -1;
@@ -140,18 +152,20 @@ article .article {
   opacity: 1;
 }
 
-#article-tags {
+#post-tags {
   margin: 5px;
 }
 
 .tag {
+  display: inline-block;
   padding: 2px;
-  margin: 1px;
   position: relative;
   z-index: 1;
-  border-radius: 8px;
+  margin: 1px;
+  /*border-radius: 8px;*/
   background: linear-gradient(180deg, rgba(17,78,54,0.75) 21%, rgba(11,80,38,0.75) 76%);
   text-align: center;
+  transition: 0.5s;
 }
 
 .tag::before {
@@ -161,7 +175,7 @@ article .article {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  /*border-radius: 15px;*/
   opacity: 0;
   transition: opacity 0.5s;
   z-index: -1;
@@ -170,4 +184,17 @@ article .article {
 
 .tag:hover::before {
   opacity: 1;
+}
+
+.tag-switched {
+  background: linear-gradient(180deg, rgba(13,110,21,0.75) 21%, rgba(13,110,21,0.75) 76%) !important;
+}
+
+.tag-switched::before {
+  background: linear-gradient(0deg, rgba(17,78,54,0.75) 21%, rgba(13,110,21,0.75) 76%) !important;
+}
+
+.utterances {
+  display: flex;
+  height: 100%;
 }

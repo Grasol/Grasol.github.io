@@ -4,6 +4,9 @@
 	<title>grasol</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="favicon.png"/>
+
+	<!--<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>-->
 </head>
 
 <body> 
@@ -17,11 +20,11 @@
 				<img id="grasolimg" src="grasol.png" alt="grasol">
 				
 				<p> 
-					Człowiek kroczący na skraju informatyki i elektroniki; 
-					Wielbiciel czystego C, nielubiący frontendu;
-					Szukający szczęścia w najdalszych zakątkach techniki;
+					Człowiek kroczący na skraju informatyki i elektroniki. 
+					Wielbiciel czystego C, nielubiący frontendu.
+					Szukający szczęścia w najdalszych zakątkach techniki.
 					Obserwujący świat z boku
-					i dzielący się myślami ze swojego subiektywnego ogródka;
+					i dzielący się myślami ze swojego subiektywnego ogródka.
 					Fan Intela oraz x86 ;)
 				</p>
 				<p>
@@ -35,30 +38,77 @@
 				</div>
 			</a>
 
+			<div class="filter">
+				<label class="tag" style="font-size: 15px;">testować</label>
+				<label class="tag" style="font-size: 15px;">niewiem</label>
+				<label class="tag" style="font-size: 15px;">6969</label>
+				<label class="tag" style="font-size: 13px;">tags-overflow</label>
+				<label class="tag" style="font-size: 13px;">overflow</label>
+				<label class="tag" style="font-size: 13px;">multitags</label>
+				<label class="tag" style="font-size: 13px;">tagstagstags</label>
+				<label class="tag" style="font-size: 13px;">tagsareawesome</label>
+				<label class="tag" style="font-size: 13px;">carry flag</label>
+				<label class="tag" style="font-size: 13px;">zero flag</label>
+				<label class="tag" style="font-size: 13px;">sign flag</label>
+				<label class="tag" style="font-size: 13px;">overflow flag</label>
+				<label class="tag" style="font-size: 13px;">tag flag</label>
+			</div>
+
 		</nav>
 
-		<section class="container">
+		<section class="post-container" id="post-container">
 
 			<article>
-				<a class="article tile-background">
-					<div class="article-header">
+				<a class="post tile-background">
+					<div class="post-header">
 						<h2> test </h2>
-						<label id="date"> 7.30.2023 </label>
+						<label id="post-info"> 2023-07-30 by Grasol </label>
 					</div>
 					<p> test test test </p>
+					<p class="cont-read"> czytaj dalej... </p>
 				</a>
-				<div id="article-tags">
+				<div id="post-tags">
 					tagi: 
-					<label class="tag"> testować </label>
-					<label class="tag"> niewiem </label>
-					<label class="tag"> 6969 </label>
-					<label class="tag"> tags-overflow </label>
-					<label class="tag"> tags overflow </label>
-					<label class="tag"> tags overflow </label>
-					<label class="tag"> tags-overflow </label>
-					<label class="tag"> tags-overflow </label>
+					<label class="tag">testować</label>
+					<label class="tag">niewiem</label>
+					<label class="tag">6969</label>
+					<label class="tag">tags-overflow</label>
+					<label class="tag">overflow</label>
+					<label class="tag">multitags</label>
+					<label class="tag">tagstagstags</label>
+					<label class="tag">tagsareawesome</label>
 				</div>
 			</article>
+
+			<article>
+				<a class="post tile-background">
+					<div class="post-header">
+						<h2> test </h2>
+						<label id="post-info"> 2023-07-30 by Grasol </label>
+					</div>
+					<p> test test test </p>
+					<p class="cont-read"> czytaj dalej... </p>
+				</a>
+				<div id="post-tags">
+					tagi: 
+					<label class="tag">testować</label>
+					<label class="tag">niewiem</label>
+					<label class="tag">6969</label>
+					<label class="tag">carry flag</label>
+					<label class="tag">zero flag</label>
+					<label class="tag">sign flag</label>
+					<label class="tag">overflow flag</label>
+					<label class="tag">tag flag</label>
+				</div>
+			</article>
+
+			<script src="https://utteranc.es/client.js"
+  			repo="Grasol/Grasol.github.io"
+  			issue-term="url"
+  			theme="icy-dark"
+  			crossorigin="anonymous"
+  			async>
+			</script>
 
 		</section>
 
@@ -66,4 +116,8 @@
 
 
 
+	<script src="index.js"></script>
+
 </body>
+
+
