@@ -1,5 +1,5 @@
 
-const containerWrapper = document.getElementById("post-container");
+const containerWrapper = document.getElementById("posts-container");
 
 let articles = document.getElementsByTagName("article");
 var posts = [];

@@ -3,8 +3,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>grasol</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" type="image/png" href="img/favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="../../onepost.css">
+	<link rel="icon" type="image/png" href="../../img/favicon.png"/>
 
 	<!--<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>-->
 </head>
@@ -17,7 +17,7 @@
 	<main>
 		<nav>
 			<a class="nav tile-background">
-				<img id="grasolimg" src="img/grasol.png" alt="grasol">
+				<img id="grasolimg" src="../../img/grasol.png" alt="grasol">
 				
 				<p> 
 					Człowiek kroczący na skraju informatyki i elektroniki. 
@@ -32,7 +32,7 @@
 				</p>
 			</a>
 			<a class="nav-link tile-background" href="https://github.com/grasol">
-				<img id="githubimg", src=img/github.png>
+				<img id="githubimg", src=../../img/github.png>
 				<div>
 					github/Grasol
 				</div>
@@ -46,55 +46,88 @@
 
 		<section class="posts-container" id="posts-container">
 			<article>
-  <a class="post tile-background" href="posts/test">
-    <div class="post-header">
-      <h2>test</h2>
-      <span id="post-info">2023-07-30 by Grasol</span>
-    </div>
-    <p><p>tutaj absolutnie nic nie ma</p></p>
-    <p class="cont-read"> czytaj dalej... </p>
-  </a>
-  <div id="post-tags">
-    tagi: 
-    <label class="tag">testować</label><label class="tag">tags-overflow</label><label class="tag">niewiem</label><label class="tag">tagsareawesome</label>
-  </div>
-</article>
-<article>
-  <a class="post tile-background" href="posts/Testowy tytuł">
+  <div class="post onepost-background">
     <div class="post-header">
       <h2>TESTOWO</h2>
       <span id="post-info">2023-08-03 by Grasol</span>
     </div>
     <p><p>Testowanie funkcji pisania na klawiterku, polecam</p>
-<p><img alt="baśka", src="img/baśka.png", height=450px width=500px></p>
-<p><em>italic</em> </p></p>
-    <p class="cont-read"> czytaj dalej... </p>
-  </a>
+<p><img alt="baśka", src="../../img/baśka.png", height=450px width=500px></p>
+<p><em>italic</em>  <strong>bold</strong></p>
+<ol>
+<li>jeden</li>
+<li>dwa</li>
+<li>trzy</li>
+</ol>
+<p>abc abc</p>
+<ol>
+<li>jeden</li>
+</ol>
+<blockquote>
+<p>a</p>
+<p>a</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>tab1</th>
+<th>tab2</th>
+<th>tab3</th>
+<th>tab4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a1</td>
+<td>a2</td>
+<td>a3</td>
+<td>a4</td>
+</tr>
+<tr>
+<td>b1</td>
+<td>b2</td>
+<td>b3</td>
+<td>b4</td>
+</tr>
+<tr>
+<td>c1</td>
+<td>c2</td>
+<td>c3</td>
+<td>c4</td>
+</tr>
+</tbody>
+</table>
+<pre><code c="c">
+#include &lt;stdio.h&gt;
+
+int main(int argc, char **argv) {
+  printf(&quot;Hello, World!&quot;);
+  return 0;
+} 
+
+</code></pre></p>
+  </div>
   <div id="post-tags">
     tagi: 
     <label class="tag">multitags</label><label class="tag">testować</label><label class="tag">tagstagstags</label><label class="tag">tag flag</label><label class="tag">niewiem</label>
   </div>
 </article>
-<article>
-  <a class="post tile-background" href="posts/test">
-    <div class="post-header">
-      <h2>test</h2>
-      <span id="post-info">2023-07-30 by Grasol</span>
-    </div>
-    <p><p>tutaj absolutnie nic nie ma</p></p>
-    <p class="cont-read"> czytaj dalej... </p>
-  </a>
-  <div id="post-tags">
-    tagi: 
-    <label class="tag">testować</label><label class="tag">tags-overflow</label><label class="tag">niewiem</label><label class="tag">tagsareawesome</label>
-  </div>
-</article>
+
+<div class="comments">
+  <script src="https://utteranc.es/client.js"
+  repo="Grasol/Grasol.github.io"
+  issue-term="url"
+  theme="icy-dark"
+  crossorigin="anonymous"
+  async>
+</script>
+</div>
 
 		</section>
 
 	</main>
 
-	<script src=" index.js "></script>
+	<script src=" ../../onepost.js "></script>
 
 </body>
 
