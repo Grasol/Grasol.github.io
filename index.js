@@ -1,23 +1,30 @@
 
-const containerWrapper = document.getElementById("post-container");
+const containerWrapper = document.getElementById("posts-container");
 
 let articles = document.getElementsByTagName("article");
 var posts = [];
 var postByTags = [];
 for (let a = 0; a < articles.length; a++) {
   posts.push(articles[a].outerHTML);
-  let postTagsWrapper = articles[a].getElementsByClassName("tag");
+  let postTagWrappers = articles[a].getElementsByClassName("tag");
   let postTags = [];
-  for (let ptw = 0; ptw < postTagsWrapper.length; ptw++) {
-    postTags.push(postTagsWrapper[ptw].innerHTML);
+  for (let ptw = 0; ptw < postTagWrappers.length; ptw++) {
+    postTags.push(postTagWrappers[ptw].innerHTML);
   }
 
   postByTags.push(postTags);
 }
 
+var tagWrappers = [];
+var tagFilter = [];
 
-
-
+function tagEventListener(func) {
+  tagWrappers = document.getElementsByClassName("tag");
+  for (let i = 0; i < tagWrappers.length; i++) {
+    tagWrappers[i].addEventListener("click", func);
+  }
+}
+  
 function tagClick() {
   let tagName = this.innerHTML;
   let tagIdx = tagFilter.indexOf(tagName);
@@ -30,13 +37,16 @@ function tagClick() {
   }
 
   filterPostByTag();
+  switchTagsCSS();
+}
 
-  for (let i = 0; i < tags.length; i++) {
-    if (tagFilter.includes(tags[i].innerHTML)) {
-      tags[i].classList.add("tag-switched");
+function switchTagsCSS() {
+  for (let i = 0; i < tagWrappers.length; i++) {
+    if (tagFilter.includes(tagWrappers[i].innerHTML)) {
+      tagWrappers[i].classList.add("tag-switched");
     }
     else {
-      tags[i].classList.remove("tag-switched");
+      tagWrappers[i].classList.remove("tag-switched");
     }
   }
 }
@@ -57,16 +67,16 @@ function filterPostByTag() {
   }
 
   containerWrapper.innerHTML = html;
-  tagEventListener();
+  tagEventListener(tagClick);
 } 
+  
 
-var tags = []
-var tagFilter = [];
-function tagEventListener() {
-  tags = document.getElementsByClassName("tag");
-  for (let i = 0; i < tags.length; i++) {
-    tags[i].addEventListener("click", tagClick);
-  }
+const url = window.location.href.split("?");
+if (url[1] != undefined) {
+  const serachParams = new URLSearchParams(url[1]);
+  let paramTags = serachParams.get("tags").split(",");
+  tagFilter = tagFilter.concat(paramTags);
 }
 
-tagEventListener();
+filterPostByTag();
+switchTagsCSS();

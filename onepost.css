@@ -97,16 +97,6 @@ p:has(> img) {
   text-align: center;
 }
 
-.post .post-header h2, 
-.post .cont-read {
-  transition: 0.5s;
-}
-
-.post:hover .post-header h2,
-.post:hover .cont-read {
-  color: #8ed200;
-}
-
 .post-header {
   display: inline-block;
   width: 100%;
@@ -129,6 +119,13 @@ p:has(> img) {
   font-size: 15px;
   font-style: normal;
   text-align: right;
+}
+
+.onepost-background {
+  width: 100%;
+  background: linear-gradient(180deg, rgb(36,8,70) 21%, rgb(17,10,79) 76%);
+  border: #7d1267e3 1px solid;
+
 }
 
 .tile-background {
@@ -198,7 +195,7 @@ p:has(> img) {
   background: linear-gradient(0deg, rgba(17,78,54,0.75) 21%, rgba(13,110,21,0.75) 76%) !important;
 }
 
-.utterances {
+.comments {
   display: flex;
   height: 100%;
 }
