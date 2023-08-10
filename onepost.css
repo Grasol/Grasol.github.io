@@ -195,7 +195,7 @@ p:has(> img) {
   background: linear-gradient(0deg, rgba(17,78,54,0.75) 21%, rgba(13,110,21,0.75) 76%) !important;
 }
 
-.comments {
+.utterances {
   display: flex;
   height: 100%;
 }

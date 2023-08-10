@@ -26,7 +26,7 @@ function tagEventListener(func) {
   
 function tagClick() {
   let tagName = this.innerHTML;
-  window.location.href = `grasol.github.io?tags=${tagName}`;
+  window.location.href = `https://grasol.github.io?tags=${tagName}`;
 }
 
 
